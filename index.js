@@ -20,6 +20,7 @@ const STREAM_ERRORS = {
 };
 
 function detectSsbNetworkErrors(err) {
+  if (!err) return err;
   const msg = err.message;
   if (msg in STREAM_ERRORS) {
     if (msg in BENIGN_STREAM_END) {
