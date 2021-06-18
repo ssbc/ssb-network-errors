@@ -15,7 +15,7 @@ This module is just a function that takes a network error and classifies it with
 a **severity number** ranging from 0 to 3.
 
 - **Severity 0**: the **local** peer (us) closed the muxrpc connection with the remote peer gracefully, there is nothing to handle here
-- **Severity 1**: the **remote* peer (them) closed the muxrpc connection with us, we MAY have to close or clean up connection details
+- **Severity 1**: the **remote** peer (them) closed the muxrpc connection with us, we MAY have to close or clean up connection details
 - **Severity 2**: a network error such as TCP or secret-handshake related occurred, may indicate a problem with the user's internet connectivity or authentication issues (related to secret-handshake)
 - **Severity 3**: any other kind of error that this module cannot classify is labelled with severity 3
 
