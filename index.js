@@ -19,23 +19,22 @@ const STREAM_ERRORS = {
   'parent stream is closing': true,
 };
 
-function detectSsbNetworkErrors(err) {
-  if (!err) return err;
+function detectSsbNetworkErrorSeverity(err) {
+  if (!err) return null;
   const msg = err.message;
   if (msg in STREAM_ERRORS) {
     if (msg in BENIGN_STREAM_END) {
       if (err instanceof Error) {
-        err.severity = 0;
+        return 0;
       } else {
-        err.severity = 1;
+        return 1;
       }
     } else {
-      err.severity = 2;
+      return 2;
     }
   } else {
-    err.severity = 3;
+    return 3;
   }
-  return err;
 }
 
-module.exports = detectSsbNetworkErrors;
+module.exports = detectSsbNetworkErrorSeverity;
