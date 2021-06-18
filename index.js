@@ -21,6 +21,7 @@ const STREAM_ERRORS = {
 
 function detectSsbNetworkErrorSeverity(err) {
   if (!err) return null;
+  if (err === true) return null;
   const msg = err.message;
   if (msg in STREAM_ERRORS) {
     if (msg in BENIGN_STREAM_END) {
