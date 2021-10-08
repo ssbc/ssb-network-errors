@@ -1,6 +1,6 @@
 {
   "name": "ssb-network-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect various muxrpc and network errors between SSB peers",
   "author": "Andre Staltz <contact@staltz.com>",
   "license": "LGPL-3.0",
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "files": [
-    "*.js",	
+    "*.js",
     "*.license",
     "LICENSES/*"
   ],
