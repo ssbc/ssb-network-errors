@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Andre Staltz
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # ssb-network-errors
 
 *Detect the severity of a muxrpc error or network connection error to a remote SSB peer.*

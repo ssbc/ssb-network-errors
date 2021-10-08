@@ -10,6 +10,11 @@
     "url": "https://github.com/ssb-ngi-pointer/ssb-network-errors"
   },
   "main": "index.js",
+  "files": [
+    "*.js",	
+    "*.license",
+    "LICENSES/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2021 Andre Staltz
+//
+// SPDX-License-Identifier: LGPL-3.0-only
+
 const BENIGN_STREAM_END = {
   // stream closed okay, ssb-js variant
   'unexpected end of parent stream': true,
